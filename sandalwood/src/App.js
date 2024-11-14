@@ -1,7 +1,7 @@
 
 function App() {
   return (
-  <>Components go here pig</>
+  <>Components go here piglet</>
   );
 }
 
