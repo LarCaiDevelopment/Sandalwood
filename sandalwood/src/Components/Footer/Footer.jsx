@@ -6,6 +6,7 @@ function Footer() {
   return (
     <footer className="footer">
       <div className="footer__content">
+        <div className="footer__section_wrapper">
         <div className="footer__content_wrapper">
           <img className="footer__logo" src={Logo} alt="Logo" />
           <div className="footer__section">
@@ -43,8 +44,10 @@ function Footer() {
             <FaTwitter />
           </ul>
         </div>
+        </div>
         <span className="line__style__footer"></span>
         <p className="footer__rights">LarCai © 2024. All rights reserved.</p>
+        
       </div>
     </footer>
   );
