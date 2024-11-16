@@ -4,7 +4,7 @@
 .footer {
   background-color: $tertiary-color;
   color: $primary-color;
-  border-top: 1px solid #DFB36E;
+  border-top: 2px solid #DFB36E;
 
   &__content {
     margin: 0 auto;
@@ -72,31 +72,81 @@ font-weight: 700;
     margin-top: 5px;
     margin-bottom: 10px;
 }
+&__logo.desktop{
+    display: none;
+}
 
 
   // Responsive styles
-  @include media(desktop) {
-    padding: $spacing-medium;
+  @include media(tablet)  {
+    padding: 16px 25px;
 
     &__section_wrapper{
-        display: flex;
         flex-direction: row;
+        justify-content: space-between;
+        line-height: 1.8;
     }
 
-    &__nav {
-      a {
-        margin: 0 $spacing-small;
-      }
+    &__section_wrapper.desktop{
+        flex-direction: column;
+    }
+
+    &__logo.mobile{
+        display: none;
+    }
+    &__logo.desktop{
+        display: block;
+        width: 80px;
+        margin-left: 15px;
+    }
+    &__rights{
+        text-align: start;
+        margin-left: 10px;
+    }
+    &__content{
+        padding: 0px 15px;
+    }
+    &__section_wrapper.icon{
+    display: unset;
+    margin-top: 10px;
+    margin-left: 10px;
     }
   }
 
-  @include media(tablet) {
-    padding: $spacing-large;
+  @include media(desktop)  {
+    padding: 16px 25px;
 
-    &__content {
-      p {
-        font-size: 13px;
-      }
+    &__section_wrapper{
+        flex-direction: row;
+        justify-content: space-between;
+        line-height: 1.8;
+    }
+
+    &__section_wrapper.desktop{
+        flex-direction: column;
+    }
+
+    &__logo.mobile{
+        display: none;
+    }
+    &__logo.desktop{
+        display: block;
+        width: 80px;
+        margin-left: 35px;
+    }
+    &__rights{
+        text-align: start;
+        margin-left: 10px;
+    }
+    &__content{
+        padding: 0px 35px;
+    }
+    &__section_wrapper.icon{
+    display: unset;
+    margin-top: 10px;
+    margin-left: 10px;
     }
   }
+
+
 }

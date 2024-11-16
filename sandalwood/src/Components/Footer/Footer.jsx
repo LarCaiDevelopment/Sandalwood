@@ -5,17 +5,18 @@ import Logo from "../../Assets/Icons/logo.png";
 function Footer() {
   return (
     <footer className="footer">
+         <img className="footer__logo desktop" src={Logo} alt="Logo" />
       <div className="footer__content">
         <div className="footer__section_wrapper">
         <div className="footer__content_wrapper">
-          <img className="footer__logo" src={Logo} alt="Logo" />
+          <img className="footer__logo mobile" src={Logo} alt="Logo" />
           <div className="footer__section">
             <p className="footer__section_title">Working hours</p>
             <span className="line__style"></span>
-            <ul className="footer__section_wrapper">
+            <ul className="footer__section_wrapper desktop">
               <li>Mon-Friday - 7am - 5pm</li>
-              <li>Saturday - closed</li>
-              <li>Sunday - closed</li>
+              <li>Saturday - Closed</li>
+              <li>Sunday - Closed</li>
             </ul>
           </div>
         </div>
@@ -23,14 +24,14 @@ function Footer() {
         <div className="footer__section">
           <p className="footer__section_title">Office</p>
           <span className="line__style"></span>
-          <ul className="footer__section_wrapper">
+          <ul className="footer__section_wrapper desktop">
             <li>Waterlooville, United Kingdom</li>
           </ul>
         </div>
         <div className="footer__section icons">
           <p className="footer__section_title">Get in touch</p>
           <span className="line__style"></span>
-          <ul className="footer__section_wrapper">
+          <ul className="footer__section_wrapper desktop">
             <li>
               <a href="mailto:Sandalwoodcc@outlook.com">Sandalwoodcc@outlook.com</a>
             </li>
