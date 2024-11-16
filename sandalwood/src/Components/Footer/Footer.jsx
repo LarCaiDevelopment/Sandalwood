@@ -5,7 +5,7 @@ import Logo from "../../Assets/Icons/logo.png";
 function Footer() {
   return (
     <footer className="footer">
-         <img className="footer__logo desktop" src={Logo} alt="Logo" />
+        <img className="footer__logo desktop" src={Logo} alt="Logo" />
       <div className="footer__content">
         <div className="footer__section_wrapper">
         <div className="footer__content_wrapper">
