@@ -2,5 +2,18 @@
 @import "../../Styles//media";
 
 .header {
-  
+  width: 80vw;
+  margin: 0 auto;
+
+  &__content{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__logo{
+    height: 80px;
+  }
+
+
 }
