@@ -13,6 +13,7 @@ function Header() {
           <button className="header__button">Contact Us</button>
         </div>
        </div>
+       <span className="line__style"></span>
     </header>
   );
 }
