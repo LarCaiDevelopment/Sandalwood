@@ -1,0 +1,31 @@
+@import "../../Styles/variables";
+@import "../../Styles//media";
+
+.hero {
+    position: relative;
+    display: flex;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+    color: white; /* Text color */
+
+    &__background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url(../../Assets/Images/img_9499_720.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        filter: brightness(50%); /* Darken only the background */
+    }
+
+    &__text {
+        position: relative; /* Ensure it is above the background */
+        z-index: 1; /* Make sure the text is above the background */
+    }
+}
+
+
+

@@ -1,5 +1,6 @@
 import Footer from "./Components/Footer/Footer";
 import Header from "./Components/Header/Header";
+import Hero from "./Components/Hero/Hero";
 import Contact from "./Components/Contact/Contact.jsx";
 import './Styles/global.scss'
 
@@ -9,8 +10,7 @@ function App() {
     <div id="root">
     <Header/>
     <div className="main-content">
-      {/* Your main content goes here */}
-      <h1>Welcome to My Website</h1>
+      <Hero/>
       <Contact/>
     </div>
     <Footer />
