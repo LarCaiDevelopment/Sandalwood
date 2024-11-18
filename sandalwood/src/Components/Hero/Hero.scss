@@ -7,7 +7,7 @@
     height: 80vh;
     justify-content: center;
     align-items: center;
-    color: white; /* Text color */
+    color: white;
 
     &__background {
         position: absolute;
@@ -18,13 +18,13 @@
         background-image: url(../../Assets/Images/img_9499_720.jpg);
         background-repeat: no-repeat;
         background-size: cover;
-        filter: brightness(50%); /* Darken only the background */
+        filter: brightness(50%); 
         background-position: center;
     }
 
     &__text {
-        position: relative; /* Ensure it is above the background */
-        z-index: 1; /* Make sure the text is above the background */
+        position: relative;
+        z-index: 1;
     }
 }
 
