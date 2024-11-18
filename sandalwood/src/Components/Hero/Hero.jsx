@@ -2,9 +2,9 @@ import "./Hero.scss";
 
 function Hero() {
   return (
-    <div class="hero">
-        <div class="hero__background"></div>
-        <p class="hero__text">Built by hand, designed for life.</p>
+    <div className="hero">
+        <div className="hero__background"></div>
+        <p className="hero__text">Built by hand, designed for life.</p>
     </div>
   );
 }
