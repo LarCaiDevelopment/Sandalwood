@@ -2,10 +2,8 @@
 @import "../../Styles//media";
 
 .howWework {
-    position: relative; /* Ensure child elements and pseudo-elements position relative to this container */
+    position: relative;
     color: #fff;
-  
-    /* Existing background image styles */
     background-image: url('../../Assets/Images/HWWmobilee.png');
     background-size: cover;
     background-position: center;
