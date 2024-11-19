@@ -1,0 +1,15 @@
+@import "../../Styles/variables";
+@import "../../Styles//media";
+
+.reviews {
+    background-image: url('../../Assets/Images/reviewsImg.png');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height: 400px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    position: relative; 
+    filter: brightness(40%); 
+}
