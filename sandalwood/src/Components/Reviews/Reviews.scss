@@ -6,10 +6,32 @@
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
-    height: 400px; 
+    height: 480px; 
     display: flex; 
-    align-items: center; 
-    justify-content: center; 
-    position: relative; 
-    filter: brightness(40%); 
+    //filter: grayscale(1);
+    padding: 5px 15px;
+    margin-bottom: 1px;
+    
+    &__title{
+    font-size: 32px;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    width: 100%;
+
+    }
+
+    @include media(desktop)  {
+        height: 440px; 
+    }
+    @include media(tablet)  {
+        &__title{
+            font-size: 48px;
+        }
+    }
+}
+@include media(desktop)  {
+    .reviews {
+        background-image: url('../../Assets/Images/reviewsDesktop.png');
+    }
 }
