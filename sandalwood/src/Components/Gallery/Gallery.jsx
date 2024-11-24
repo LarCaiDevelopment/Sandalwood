@@ -40,7 +40,7 @@ function Gallery() {
   ];
 
   return (
-    <div className="gallery">
+    <div id = "gallery" className="gallery">
       <div className="gallery__wrapper">
         <p className="gallery__tittle">Gallery</p>
         <span className="line__style__gallery"></span>

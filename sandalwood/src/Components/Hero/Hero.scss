@@ -4,7 +4,7 @@
 .hero {
     position: relative;
     display: flex;
-    height: 80vh;
+    height: 95vh;
     justify-content: center;
     align-items: center;
     color: white;
@@ -25,8 +25,51 @@
     &__text {
         position: relative;
         z-index: 1;
+        font-size:40px;
+        margin: 0 auto;
+        width: 80vw;
+    }
+
+    &__cta{
+        position: relative;
+        display:block;
+        background-color: #DFB36E;
+        color: white;
+        font-weight: 700;
+        padding: 10px;
+        width: 116px;  
+        border: none;  
+        border-radius: 18px;
+        font-size: 18px;
+        width: 200px;
+        margin-top: 10px;
+      }
+
+      .hero__cta::after {
+        content: " →"; /* Adds a slim right arrow */
+        font-size: 18px; /* Adjust size of the arrow if needed */
+        margin-left: 8px; /* Space between text and arrow */
+      }
+
+      @include media(mobile)  {
+        &__text {
+            text-align: center;
+            line-height: 48px;
+            font-size: 30px;
+        }
+
+        &__cta{
+            margin: 0 auto;
+            margin-top: 15px;
+        }
     }
 }
+
+.hero a{
+    text-decoration: none !important;
+}
+
+
 
 
 

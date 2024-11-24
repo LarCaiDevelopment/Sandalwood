@@ -8,7 +8,7 @@ function HowWeWork() {
         <div className="howWework__wrapper">
             <p className="howWework__title">How we Work</p>
             <span className="line__style__work"></span>
-            <p className="howWework__description">We want to make this process as simple for everybody involved as possible.</p>
+            <p className="howWework__description">We want to make this process as simple as possible for everyone involved.</p>
             <div className="howWework__sections_wrapper">
                 <div className="howWework__section">
                     <p>Title</p>
