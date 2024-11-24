@@ -6,6 +6,7 @@ import Reviews from "./Components/Reviews/Reviews.jsx"
 import HowWeWork from "./Components/HowWeWork/HowWeWork.jsx";
 import AboutUs from "./Components/AboutUs/AboutUs.jsx";
 import './Styles/global.scss'
+import Gallery from "./Components/Gallery/Gallery.jsx";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Hero/>
       <AboutUs/>
       <HowWeWork/>
+      <Gallery />
       <Reviews/>
       <Contact/>
     </div>
