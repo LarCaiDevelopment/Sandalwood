@@ -23,13 +23,13 @@
         max-width: 850px;
     }
     &__pics{
-        border: 1px solid red;
         height: 250px;
         width: 300px;
         margin-bottom: 20px;
         background-size: cover;
         background-position: center;
         cursor: pointer;
+        border-radius: 5px;
 
         &:first-child{
             margin-top: 20px;
@@ -39,7 +39,7 @@
         &__pics_wrapper{
             flex-direction: row;
             flex-wrap: wrap;
-            justify-content: space-between;
+            justify-content: space-around;
             margin-bottom: 20px;
         }
         &__pics{
@@ -77,4 +77,7 @@
     height: 2px;
     margin-bottom: 10px;
     margin-top: 5px;
+}
+.PhotoView-Slider__Backdrop{
+    background: rgba(0,0,0,.5)!important;
 }
