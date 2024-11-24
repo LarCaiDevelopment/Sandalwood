@@ -3,9 +3,15 @@ import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
 import Logo from "../../Assets/Icons/logo.png";
 
 function Footer() {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
   return (
     <footer className="footer">
-        <img className="footer__logo desktop" src={Logo} alt="Logo" />
+        <img className="footer__logo desktop" src={Logo} alt="Logo" onClick={scrollToTop} />
       <div className="footer__content">
         <div className="footer__section_wrapper">
         <div className="footer__content_wrapper">
