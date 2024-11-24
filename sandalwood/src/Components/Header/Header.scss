@@ -9,6 +9,10 @@
   right:0;
   left: 0;
 
+  &__left{
+    cursor: pointer;
+  }
+
   &__content{
     width: 100%;
     display: flex;
@@ -18,6 +22,7 @@
 
   &__logo{
     height: 80px;
+    cursor: pointer;
   }
 
   &__button{
@@ -45,6 +50,12 @@
         width: 116px;  
         border: none;  
         border-radius: 18px;
+        cursor: pointer;
+        height: 36px;
+
+        &:hover{
+          text-decoration: underline;
+        }
       }
 
     &__right{
