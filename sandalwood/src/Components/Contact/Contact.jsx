@@ -1,5 +1,6 @@
 import "./Contact.scss";
 import ContactImage from "../../Assets/Images/image_1.png";
+import { IoIosSend } from "react-icons/io";
 
 function Contact() {
   return (
@@ -48,7 +49,7 @@ function Contact() {
               <textarea id="message" name="message" rows="4" required></textarea>
             </div>
             <button type="submit" className="contact__submit_button">
-              SUBMIT <span className="contact__submit_icon">✈️</span>
+              SUBMIT <span className="contact__submit_icon"><IoIosSend/></span>
             </button>
           </form>
         </div>
