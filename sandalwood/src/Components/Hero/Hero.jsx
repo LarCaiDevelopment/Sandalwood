@@ -1,14 +1,25 @@
 import "./Hero.scss";
 
 function Hero() {
+  const scrollToGallery = () => {
+    const gallerySection = document.getElementById("gallery");
+    if (gallerySection) {
+      gallerySection.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  };
+
   return (
     <div className="hero">
-        <div className="hero__background"></div>
-        <div className="hero__text--cont">
-            <p className="hero__text">Built by hand, designed for life.</p>
-            <a href="#gallery"><button className="hero__cta">View My Work</button></a>
-        </div>
-          
+      <div className="hero__background"></div>
+      <div className="hero__text--cont">
+        <p className="hero__text">Built by hand, designed for life.</p>
+        <button className="hero__cta" onClick={scrollToGallery}>
+          View My Work
+        </button>
+      </div>
     </div>
   );
 }

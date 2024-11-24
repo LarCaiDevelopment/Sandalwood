@@ -2,74 +2,105 @@
 @import "../../Styles//media";
 
 .hero {
+  position: relative;
+  display: flex;
+  height: 95vh;  /* Hero height stays fixed */
+  justify-content: center;
+  align-items: center;
+  color: white;
+  overflow: hidden;  /* Prevents the zoom from spilling out of the hero container */
+
+  &__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(../../Assets/Images/img_9528_720.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(50%);
+    animation: zoomIn 10s ease-in-out;
+  }
+
+  @keyframes zoomIn {
+    0% {
+      transform: scale(1); 
+    }
+    50% {
+      transform: scale(1.2); 
+    }
+    100% {
+      transform: scale(1.05); 
+    }
+  }
+
+  &__text {
     position: relative;
-    display: flex;
-    height: 95vh;
-    justify-content: center;
-    align-items: center;
+    z-index: 1;
+    font-size: 40px;
+    margin: 0 auto;
+    width: 80vw;
+  }
+
+  &__cta {
+    position: relative;
+    display: block;
+    background-color: #dfb36e;
     color: white;
+    font-weight: 700;
+    height: 36px;
+    width: 116px;
+    border: none;
+    border-radius: 18px;
+    font-size: 18px;
+    width: 200px;
+    margin-top: 10px;
+    cursor: pointer;
 
-    &__background {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-image: url(../../Assets/Images/img_9528_720.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        filter: brightness(50%); 
-        background-position: center;
+    &:hover{
+        text-decoration: underline;
     }
+  }
 
+  .hero__cta::after {
+    content: " →";
+    font-size: 18px;
+    margin-left: 8px;
+    display: inline-block;
+    animation: moveArrow 1.5s infinite ease-in-out;
+  }
+
+  @keyframes moveArrow {
+    0% {
+      transform: translateX(0); 
+    }
+    50% {
+      transform: translateX(5px); 
+    }
+    70% {
+      transform: translateX(3px); 
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  @include media(mobile) {
     &__text {
-        position: relative;
-        z-index: 1;
-        font-size:40px;
-        margin: 0 auto;
-        width: 80vw;
+      text-align: center;
+      line-height: 48px;
+      font-size: 30px;
     }
 
-    &__cta{
-        position: relative;
-        display:block;
-        background-color: #DFB36E;
-        color: white;
-        font-weight: 700;
-        padding: 10px;
-        width: 116px;  
-        border: none;  
-        border-radius: 18px;
-        font-size: 18px;
-        width: 200px;
-        margin-top: 10px;
-      }
-
-      .hero__cta::after {
-        content: " →"; /* Adds a slim right arrow */
-        font-size: 18px; /* Adjust size of the arrow if needed */
-        margin-left: 8px; /* Space between text and arrow */
-      }
-
-      @include media(mobile)  {
-        &__text {
-            text-align: center;
-            line-height: 48px;
-            font-size: 30px;
-        }
-
-        &__cta{
-            margin: 0 auto;
-            margin-top: 15px;
-        }
+    &__cta {
+      margin: 0 auto;
+      margin-top: 15px;
     }
+  }
 }
 
-.hero a{
-    text-decoration: none !important;
+.hero a {
+  text-decoration: none !important;
 }
-
-
-
-
-
