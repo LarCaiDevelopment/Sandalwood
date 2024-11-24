@@ -4,7 +4,7 @@
 .howWework {
     position: relative;
     color: #fff;
-    background-image: url(../../Assets/Images/HWWmobilee.png);
+    background-image: url(../../Assets/Images/hwwmobilee.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -84,7 +84,7 @@
 }
 @include media(desktop)  {
     .howWework {
-        background-image: url(../../Assets/Images/HWWdesktop.png);
+        background-image: url(../../Assets/Images/hwwDesktop.png);
         height: 380px;
     }
 }
