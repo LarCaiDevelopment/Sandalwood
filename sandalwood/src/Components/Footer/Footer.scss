@@ -99,6 +99,14 @@ font-weight: 700;
         width: 80px;
         margin-left: 15px;
        cursor: pointer; 
+       img{
+        width: 100px;
+    align-items: center;
+    text-align: center;
+    display: flex
+;
+    justify-content: center;
+       }
     }
     &__rights{
         text-align: start;
@@ -135,6 +143,14 @@ font-weight: 700;
         width: 80px;
         margin-left: 35px;
         cursor: pointer;
+        img{
+            width: 100px;
+        align-items: center;
+        text-align: center;
+        display: flex
+    ;
+        justify-content: center;
+           }
     }
     &__rights{
         text-align: start;

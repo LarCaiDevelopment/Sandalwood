@@ -12,13 +12,15 @@ function Footer() {
 
   return (
     <footer className="footer">
-      <img className="footer__logo desktop" src={Logo} alt="Logo" onClick={scrollToTop} />
+      <a href="#top" className="footer__logo desktop" onClick={scrollToTop}>
+        <img src={Logo} alt="LarCai Logo" />
+      </a>
       <div className="footer__content">
         <div className="footer__section_wrapper">
           <div className="footer__content_wrapper">
-            <img className="footer__logo mobile" src={Logo} alt="Logo" />
+            <img className="footer__logo mobile" src={Logo} alt="LarCai Logo" />
             <div className="footer__section">
-              <p className="footer__section_title">Working hours</p>
+              <h2 className="footer__section_title">Working hours</h2>
               <span className="line__style"></span>
               <div className="footer__section_wrapper desktop">
                 <p>Mon-Friday - 7am - 5pm</p>
@@ -29,7 +31,7 @@ function Footer() {
           </div>
 
           <div className="footer__section">
-            <p className="footer__section_title">Office</p>
+            <h2 className="footer__section_title">Office</h2>
             <span className="line__style"></span>
             <div className="footer__section_wrapper desktop">
               <p>Waterlooville, United Kingdom</p>
@@ -37,7 +39,7 @@ function Footer() {
           </div>
 
           <div className="footer__section icons">
-            <p className="footer__section_title">Get in touch</p>
+            <h2 className="footer__section_title">Get in touch</h2>
             <span className="line__style"></span>
             <div className="footer__section_wrapper desktop">
               <p>
@@ -48,9 +50,15 @@ function Footer() {
               </p>
             </div>
             <div className="footer__section_wrapper icon">
-              <FaFacebook />
-              <FaInstagram />
-              <FaTwitter />
+              <a href="https://facebook.com" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+                <FaFacebook />
+              </a>
+              <a href="https://instagram.com" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+                <FaInstagram />
+              </a>
+              <a href="https://twitter.com" aria-label="Twitter" target="_blank" rel="noopener noreferrer">
+                <FaTwitter />
+              </a>
             </div>
           </div>
         </div>
