@@ -34,6 +34,7 @@
     height: 190px;
     display: flex;
     flex-direction: column;
+    padding: 10px;
   }
 
   &__topContent {
@@ -71,6 +72,7 @@
     width: 500px;
   }
 
+
   .review__stars {
     display: flex;
     justify-content: flex-end;
@@ -82,7 +84,7 @@
     width: 24px;  
     height: 24px; 
     margin-right: 4px;
-    color: #fdd663 
+    color: #fdd663;
   }
 
 
