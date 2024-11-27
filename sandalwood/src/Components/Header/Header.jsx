@@ -9,6 +9,16 @@ function Header() {
     });
   };
 
+  const scrollToContact = () => {
+    const contactSection = document.querySelector(".contact");
+    if (contactSection) {
+      contactSection.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  };
+
   return (
     <header className="header">
       <div className="header__content">
@@ -24,7 +34,7 @@ function Header() {
           <a className="header__num" href="tel:+447825838552" aria-label="Call us at +44 7825 838552">
             +44 7825 838552
           </a>
-          <button className="header__button" aria-label="Contact us to learn more about our services">
+          <button className="header__button" aria-label="Contact us to learn more about our services" onClick={scrollToContact}>
             Contact Us
           </button>
         </div>
