@@ -1,37 +1,101 @@
 @import "../../Styles/variables";
-@import "../../Styles//media";
+@import "../../Styles/media";
 
 .reviews {
-    background-image: url('../../Assets/Images/reviewsImg.png');
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat; 
-    height: 480px; 
-    display: flex; 
-    //filter: grayscale(1);
-    padding: 5px 15px;
-    margin-bottom: 1px;
-    
-    &__title{
+  background-image: url('../../Assets/Images/reviewsImg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 480px;
+  display: flex;
+  padding: 5px 15px;
+  margin-bottom: 1px;
+  flex-direction: column;
+
+  &__title {
     font-size: 32px;
     color: #fff;
     font-weight: 700;
     text-align: center;
     width: 100%;
+    margin-bottom: 25px;
+  }
 
-    }
+  &__review-container {
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
 
-    @include media(desktop)  {
-        height: 440px; 
+  &__container_Wrapper {
+    width: auto;
+    background: white;
+    height: 190px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__topContent {
+    display: flex;
+    width: 60%;
+    white-space: nowrap;
+  }
+
+  &__midContent {
+    display: flex;
+    height: 80%;
+  }
+
+  &__botContent {
+    text-align: end;
+  }
+
+  @include media(desktop) {
+    height: 440px;
+    background-image: url('../../Assets/Images/reviewsDesktop.png');
+    flex-direction: column;
+
+    &__title {
+      font-size: 48px;
     }
-    @include media(tablet)  {
-        &__title{
-            font-size: 48px;
-        }
+  }
+
+  @include media(tablet) {
+    &__title {
+      font-size: 48px;
     }
-}
-@include media(desktop)  {
-    .reviews {
-        background-image: url('../../Assets/Images/reviewsDesktop.png');
-    }
+  }
+
+  .swiper-wrapper {
+    width: 500px;
+  }
+
+  .review__stars {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+  }
+
+  .star {
+    display: inline-block;
+    width: 24px;  
+    height: 24px; 
+    margin-right: 4px;
+    color: #fdd663 
+  }
+
+
+  .star.full {
+    color: #fdd663
+  }
+
+  .star.half {
+    color: #fdd663 
+  }
+
+  /* Custom class for empty stars */
+  .star.empty {
+    color: #9e9e9e;
+  }
 }
