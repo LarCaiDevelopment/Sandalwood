@@ -16,6 +16,22 @@
     margin-bottom: 10px;
   }
 
+  &__text{
+    position: absolute;
+    top: 40%;
+    left: 35%;
+    color: white;
+    font-size: 18px;
+  }
+
+  &__image{
+    position: relative;
+  }
+
+  &__image img{
+    filter: brightness(80%);
+  }
+
   .line__style__services {
     background: #dfb36e;
     display: block;
@@ -57,7 +73,6 @@
         height: auto;
         border-radius: 5px;
         object-fit: cover;
-
         max-width: 112px;
         max-height: 150px;
       }
