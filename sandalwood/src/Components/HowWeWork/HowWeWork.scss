@@ -9,7 +9,7 @@
     background-position: center;
     background-repeat: no-repeat;
     height: auto;
-  
+
     &::before {
       content: "";
       position: absolute;
@@ -43,6 +43,10 @@
         text-align: center;
     }
     &__description{
+        text-align: left;
+    }
+
+    &__sub{
         text-align: center;
     }
 

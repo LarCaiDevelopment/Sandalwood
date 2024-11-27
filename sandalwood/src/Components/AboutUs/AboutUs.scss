@@ -9,12 +9,20 @@
     align-items: center;
     color: black;
     flex-direction: column;
+    width: 80vw;
+    margin: 0 auto;
 
-    
+    &__heading{
+        color: #ac8a53;
+        font-weight: 700;
+        font-size: 40px;
+    }
 
     &__text {
         position: relative;
         z-index: 1;
+        font-size: 20px;
+        text-align: center;
     }
 }
 
