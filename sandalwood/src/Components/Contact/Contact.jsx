@@ -1,5 +1,5 @@
 import "./Contact.scss";
-import ContactImage from "../../Assets/Images/image_1.png";
+import ContactImage from "../../Assets/Images/getintouch.JPG";
 import { IoIosSend } from "react-icons/io";
 
 function Contact() {
