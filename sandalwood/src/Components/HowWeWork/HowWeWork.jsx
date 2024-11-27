@@ -10,20 +10,27 @@ function HowWeWork() {
             <span className="line__style__work"></span>
             <p className="howWework__description">We want to make this process as simple as possible for everyone involved.</p>
             <div className="howWework__sections_wrapper">
-                <div className="howWework__section">
-                    <p>Title</p>
-                    <p>Begin the WorksOnce all details are confirmed, we can start work on your project. We build everything in-house at our own workshop, so we have complete control of our lead times.</p>
+            <div className="howWework__section">
+                    <p>Step 1</p>
+                    <p>
+                        Begin with an in-depth consultation to discuss your project requirements, including the desired scope of work and timeframe. Following this discussion, a detailed quotation will be provided, and a mutually agreeable start date will be confirmed.
+                    </p>
                 </div>
                 <HiMiniArrowLongDown size={60} />
                 <div className="howWework__section">
-                    <p>Title</p>
-                    <p>Begin the WorksOnce all details are confirmed, we can start work on your project. We build everything in-house at our own workshop, so we have complete control of our lead times.</p>
+                    <p>Step 2</p>
+                    <p>
+                        The project commences on the agreed date. Throughout the process, flexibility is maintained to accommodate minor adjustments or design refinements as needed.
+                    </p>
                 </div>
                 <HiMiniArrowLongDown size={60} />
                 <div className="howWework__section">
-                    <p>Title</p>
-                    <p>Begin the WorksOnce all details are confirmed, we can start work on your project. We build everything in-house at our own workshop, so we have complete control of our lead times.</p>
-                </div>
+                    <p>Step 3</p>
+                    <p>
+                        The project is completed on or before the agreed deadline, ensuring all deliverables meet your expectations and standards.
+                    </p>
+            </div>
+
             </div>
         </div>
     </div>
