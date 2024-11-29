@@ -35,6 +35,16 @@
         display: flex;
         flex-direction: column;
         height: 100%;
+        @include media(mobile){
+            width: 80vw;
+            margin: 0 auto;
+            padding-top: 20px;
+        }
+    }
+
+    &__step{
+        font-weight: 700;
+        font-size: 20px;
     }
 
     &__title{
