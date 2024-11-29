@@ -1,6 +1,6 @@
 // Breakpoints
-$breakpoint-mobile: 767px;   // For mobile devices (up to 767px)
-$breakpoint-tablet: 1023px;  // For tablets (up to 1023px)
+$breakpoint-mobile: 767px;   
+$breakpoint-tablet: 1023px; 
 
 // Mixin for media queries
 @mixin media($device) {

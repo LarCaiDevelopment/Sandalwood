@@ -143,7 +143,6 @@ function Gallery() {
           {categories.map((category, index) => (
             <PhotoProvider key={index} bannerVisible={true}>
               <div>
-        
             <PhotoView src={category.thumbnail}>
               <div
                 className="gallery__pics"
@@ -157,13 +156,13 @@ function Gallery() {
             </PhotoView>
 
                 {category.images.map((image, idx) => (
-    <PhotoView key={`${index}-${idx}`} src={image}>
-    <img
-      src={image}
-      alt={`Category ${index + 1} Image ${idx + 1}`}
-      style={{ display: "none" }}
-    />
-  </PhotoView>
+                  <PhotoView key={`${index}-${idx}`} src={image}>
+                  <img
+                    src={image}
+                    alt={`Category ${index + 1} Image ${idx + 1}`}
+                    style={{ display: "none" }}
+                  />
+                </PhotoView>
                 ))}
               </div>
             </PhotoProvider>
