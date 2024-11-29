@@ -90,8 +90,6 @@ function Reviews() {
           disableOnInteraction: false, 
         }}
         loop="true"
-        onSlideChange={() => console.log('slide change')}
-        onSwiper={(swiper) => console.log(swiper)}
       >
         {reviews.length > 0 ? (
           reviews.map((review, index) => (

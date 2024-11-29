@@ -2,6 +2,7 @@ import React from "react";
 import { PhotoProvider, PhotoView } from "react-photo-view";
 import "react-photo-view/dist/react-photo-view.css";
 import "./Gallery.scss";
+
 import bathroom from '../../Assets/Images/GalleryImages/bathroom1.JPG';
 import bathroom2 from '../../Assets/Images/GalleryImages/bathroom2.JPG';
 import bathroom3 from '../../Assets/Images/GalleryImages/bathroom3.JPG';
@@ -140,7 +141,7 @@ function Gallery() {
         <span className="line__style__gallery"></span>
         <div className="gallery__pics_wrapper">
           {categories.map((category, index) => (
-            <PhotoProvider key={index}>
+            <PhotoProvider key={index} bannerVisible={true}>
               <div>
         
             <PhotoView src={category.thumbnail}>
@@ -156,13 +157,13 @@ function Gallery() {
             </PhotoView>
 
                 {category.images.map((image, idx) => (
-                  <PhotoView key={`${index}-${idx}`} src={image}>
-                    <img
-                      src={image}
-                      alt={`Category ${index + 1} Image ${idx + 1}`}
-                      style={{ display: "none" }} // Hidden images
-                    />
-                  </PhotoView>
+    <PhotoView key={`${index}-${idx}`} src={image}>
+    <img
+      src={image}
+      alt={`Category ${index + 1} Image ${idx + 1}`}
+      style={{ display: "none" }}
+    />
+  </PhotoView>
                 ))}
               </div>
             </PhotoProvider>
