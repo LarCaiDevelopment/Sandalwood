@@ -71,6 +71,7 @@ function Gallery() {
         bathroom9,
         bathroom4,
       ],
+      title: "Bathrooms", // Add title for this category
     },
     {
       thumbnail: kitchen9,
@@ -84,6 +85,7 @@ function Gallery() {
         kitchen7,
         kitchen8,
       ],
+      title: "Kitchens",
     },
     {
       thumbnail: fence,
@@ -96,6 +98,7 @@ function Gallery() {
         fence7,
         fence8,
       ],
+      title: "Fences",
     },
     {
       thumbnail: storage3,
@@ -126,6 +129,7 @@ function Gallery() {
         door3,
         door4,
       ],
+      title: "Storage & Living Spaces",
     },
   ];
 
@@ -138,15 +142,18 @@ function Gallery() {
           {categories.map((category, index) => (
             <PhotoProvider key={index}>
               <div>
-                {/* Thumbnail for the category */}
-                <PhotoView src={category.thumbnail}>
-                  <div
-                    className="gallery__pics"
-                    style={{
-                      backgroundImage: `url(${category.thumbnail})`,
-                    }}
-                  ></div>
-                </PhotoView>
+        
+            <PhotoView src={category.thumbnail}>
+              <div
+                className="gallery__pics"
+                style={{
+                  backgroundImage: `url(${category.thumbnail})`,
+                  position: "relative",
+                }}
+              >
+                <div className="gallery__title">{category.title}</div>
+              </div>
+            </PhotoView>
 
                 {category.images.map((image, idx) => (
                   <PhotoView key={`${index}-${idx}`} src={image}>
