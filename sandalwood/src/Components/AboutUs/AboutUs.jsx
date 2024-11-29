@@ -5,7 +5,7 @@ function AboutUs() {
     <div className="about">
   <h2 className="about__heading">Sandalwood Carpentry</h2>
   <p className="about__text">
-    At Sandalwood Carpentry, we take pride in offering high-quality carpentry services to the South Coast of the UK.
+    At Sandalwood Carpentry, we take pride in offering high-quality carpentry services to the South Coast of the UK with 17 years of experience.
   </p>
 
   <p className="about__text">
