@@ -71,7 +71,7 @@ function Gallery() {
         bathroom9,
         bathroom4,
       ],
-      title: "Bathrooms", // Add title for this category
+      title: "Bathrooms",
     },
     {
       thumbnail: kitchen9,
@@ -129,7 +129,7 @@ function Gallery() {
         door3,
         door4,
       ],
-      title: "Storage & Living Spaces",
+      title: "Others",
     },
   ];
 
