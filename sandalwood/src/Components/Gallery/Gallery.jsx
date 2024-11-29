@@ -121,7 +121,6 @@ function Gallery() {
         living14,
         living15,
         living16,
-        living17,
         door,
         door2,
         door3,
