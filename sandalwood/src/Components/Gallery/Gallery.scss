@@ -42,7 +42,7 @@
     }
 
     &::after {
-      content: ""; // Optional: Add a gradient overlay
+      content: "";
       position: absolute;
       top: 0;
       left: 0;
@@ -54,7 +54,7 @@
 
     .gallery__title {
       position: absolute;
-      bottom: 50%;
+      bottom: 40%;
       left: 50%;
       transform: translateX(-50%);
       color: #fff;
