@@ -11,7 +11,7 @@ function Services() {
     <div className="services">
       <div className="services__wrapper">
         <div className="services__wrapper_first">
-        <p className="services__title">Our Services</p>
+        <h2 className="services__title">Our Services</h2>
         <span className="line__style__services"></span>
         <p className="services__description">
           We specialise in bespoke joinery manufacture and installation for

@@ -15,7 +15,7 @@ function Hero() {
     <div className="hero">
       <div className="hero__background"></div>
       <div className="hero__text--cont">
-        <p className="hero__text">Built by hand, designed for life.</p>
+        <h1 className="hero__text">Built by hand, designed for life.</h1>
         <button className="hero__cta" onClick={scrollToGallery}>
           View My Work
         </button>

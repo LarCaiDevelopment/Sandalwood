@@ -137,7 +137,7 @@ function Gallery() {
   return (
     <div id = "gallery" className="gallery">
       <div className="gallery__wrapper">
-        <p className="gallery__tittle">Gallery</p>
+        <h2 className="gallery__tittle">Gallery</h2>
         <span className="line__style__gallery"></span>
         <div className="gallery__pics_wrapper">
           {categories.map((category, index) => (

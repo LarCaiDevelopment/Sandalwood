@@ -1,5 +1,11 @@
 @import "../../Styles/variables";
 @import "../../Styles//media";
+h2{
+    font-size: 40px !important;
+    @include media(mobile){
+        font-size: 32px !important;
+    }
+}
 
 .contact {
     color: #333;

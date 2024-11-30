@@ -1,18 +1,22 @@
 import "./Footer.scss";
-import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
+import { FaFacebook, FaInstagram } from "react-icons/fa";
 import Logo from "../../Assets/Icons/logo.png";
 
 function Footer() {
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
+
+  const scrollToHead = () => {
+    const headSection = document.querySelector(".header");
+    if (headSection) {
+      headSection.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
   };
 
   return (
     <footer className="footer">
-      <a href="#top" className="footer__logo desktop" onClick={scrollToTop}>
+      <a className="footer__logo desktop" onClick={scrollToHead}>
         <img src={Logo} alt="LarCai Logo" />
       </a>
       <div className="footer__content">
@@ -20,7 +24,7 @@ function Footer() {
           <div className="footer__content_wrapper">
             <img className="footer__logo mobile" src={Logo} alt="LarCai Logo" />
             <div className="footer__section">
-              <h2 className="footer__section_title">Working hours</h2>
+              <h3 className="footer__section_title">Working hours</h3>
               <span className="line__style"></span>
               <div className="footer__section_wrapper desktop">
                 <p>Mon-Friday - 7am - 5pm</p>
@@ -31,7 +35,7 @@ function Footer() {
           </div>
 
           <div className="footer__section">
-            <h2 className="footer__section_title">Office</h2>
+            <h3 className="footer__section_title">Office</h3>
             <span className="line__style"></span>
             <div className="footer__section_wrapper desktop">
               <p>Waterlooville, United Kingdom</p>
@@ -39,7 +43,7 @@ function Footer() {
           </div>
 
           <div className="footer__section icons">
-            <h2 className="footer__section_title">Get in touch</h2>
+            <h3 className="footer__section_title">Get in touch</h3>
             <span className="line__style"></span>
             <div className="footer__section_wrapper desktop">
               <p>
@@ -50,14 +54,11 @@ function Footer() {
               </p>
             </div>
             <div className="footer__section_wrapper icon">
-              <a href="https://facebook.com" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.facebook.com/SandalwoodCustomCarpentry/" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
                 <FaFacebook />
               </a>
-              <a href="https://instagram.com" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.instagram.com/sandalwood_custom_carpentry/" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
                 <FaInstagram />
-              </a>
-              <a href="https://twitter.com" aria-label="Twitter" target="_blank" rel="noopener noreferrer">
-                <FaTwitter />
               </a>
             </div>
           </div>

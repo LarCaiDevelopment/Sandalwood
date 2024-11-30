@@ -10,7 +10,7 @@ function Contact() {
       </div>
       <div className="contact__form_wrapper">
         <div className="contact__form">
-          <p className="contact__title">Get In Touch!</p>
+          <h2 className="contact__title">Get In Touch!</h2>
           <form
             action="https://formspree.io/f/xjkvoyay"
             method="POST"
