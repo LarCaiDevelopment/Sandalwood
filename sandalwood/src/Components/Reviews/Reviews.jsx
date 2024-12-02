@@ -1,7 +1,7 @@
 import "./Reviews.scss";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-import { Autoplay } from 'swiper/modules';
+import { Autoplay,EffectFade } from 'swiper/modules';
 import React, { useEffect, useState } from "react";
 import { FaStar, FaStarHalfAlt, FaRegStar } from 'react-icons/fa';
 
@@ -82,7 +82,7 @@ function Reviews() {
     <div className="reviews">
       <p className="reviews__title">What our Customers have to say about us</p>
       <Swiper
-        modules={[Autoplay]}
+        modules={[Autoplay,EffectFade]}
         spaceBetween={50}
         slidesPerView={1}
         autoplay={{
@@ -90,6 +90,8 @@ function Reviews() {
           disableOnInteraction: false, 
         }}
         loop="true"
+        effect="fade"
+  fadeEffect={{ crossFade: true }}
       >
         {reviews.length > 0 ? (
           reviews.map((review, index) => (
@@ -123,6 +125,7 @@ function Reviews() {
           <p>No reviews available.</p>
         )}
       </Swiper>
+      <a className="moreReviews" href="https://www.facebook.com/SandalwoodCustomCarpentry/" aria-label="Facebook" target="_blank" rel="noopener noreferrer">More reviews</a>
     </div>
   );
 }
