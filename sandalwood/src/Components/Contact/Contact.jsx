@@ -15,9 +15,9 @@ function Contact() {
         {/* //<img className="contact__image" src={ContactImage} alt="ContactImage" /> */}
         <div className="contact__wrapper">
           <p className="contact__right_TopText">Contact us</p>
-          <h1 className="contact__right_title">
+          <h2 className="contact__right_title">
             Have questions?<br></br>Get in touch!
-          </h1>
+          </h2>
           <p className="contact__right_text">Whether you need assistance, have inquiries about our services, or want to explore the best solutions for your tasks, feel free to reach out to us. Our team is always ready to provide the information and support you need.</p>
           <div>
             <p className="contact__right_options">
