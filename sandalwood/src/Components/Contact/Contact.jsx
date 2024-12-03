@@ -14,24 +14,10 @@ function Contact() {
       <div className="contact__image_wrapper">
         {/* //<img className="contact__image" src={ContactImage} alt="ContactImage" /> */}
         <div className="contact__wrapper">
-          <p className="contact__right_TopText">Contact us</p>
           <h2 className="contact__right_title">
-            Have questions?<br></br>Get in touch!
+           Contact Us
           </h2>
-          <p className="contact__right_text">Whether you need assistance, have inquiries about our services, or want to explore the best solutions for your tasks, feel free to reach out to us. Our team is always ready to provide the information and support you need.</p>
-          <div>
-            <p className="contact__right_options">
-              <FaLocationDot />
-              Highbridge Estates, Brambridge, Eastleigh, SO50 6HS
-            </p>
-            <p className="contact__right_options">
-              <IoMdCall /> <a href="tel:01962717627">0196 271 7627</a>
-            </p>
-            <p className="contact__right_options">
-              <MdOutlineMail />
-              <a href="mailto:Sandalwoodcc@outlook.com">Sandalwoodcc@outlook.com</a>
-            </p>
-          </div>
+          <p className="contact__right_text">Tell me a bit about your desired project and I'll be in touch as soon as I can</p>
         </div>
       </div>
       <div className="contact__form_wrapper">
@@ -40,13 +26,13 @@ function Contact() {
             <div className="contact__form_row">
               <div className="contact__form_group">
                 <label htmlFor="first-name">
-                 <CgProfile /> Name<span className="contact__required">*</span>
+                 <CgProfile /> Name<span className="contact__required"></span>
                 </label>
                 <input type="text" id="first-name" name="firstName" required />
               </div>
               <div className="contact__form_group">
                 <label htmlFor="last-name">
-                  Last Name<span className="contact__required">*</span>
+                  Last Name<span className="contact__required"></span>
                 </label>
                 <input type="text" id="last-name" name="lastName" required />
               </div>
@@ -54,13 +40,13 @@ function Contact() {
             <div className="contact__form_row">
               <div className="contact__form_group">
                 <label htmlFor="email">
-                <MdOutlineMail /> Email<span className="contact__required">*</span>
+                <MdOutlineMail /> Email<span className="contact__required"></span>
                 </label>
                 <input type="email" id="email" name="email" required />
               </div>
               <div className="contact__form_group">
                 <label htmlFor="phone">
-                <IoMdCall /> Phone<span className="contact__required">*</span>
+                <IoMdCall /> Phone<span className="contact__required"></span>
                 </label>
                 <input
                   type="tel"
@@ -75,7 +61,7 @@ function Contact() {
             </div>
             <div className="contact__form_group_message">
               <label htmlFor="message">
-                <GoPencil /> Message<span className="contact__required">*</span>
+                <GoPencil /> Message<span className="contact__required"></span>
               </label>
               <textarea id="message" name="message" rows="4" required></textarea>
             </div>
