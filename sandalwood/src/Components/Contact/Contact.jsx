@@ -16,7 +16,7 @@ function Contact() {
         <div className="contact__wrapper">
           <h2 className="contact__right_title">
            Contact Us
-           <span class="line__style" role="presentation" aria-hidden="true"></span>
+           <span className="line__style" role="presentation" aria-hidden="true"></span>
           </h2>
           <p className="contact__right_text">Tell me a bit about your desired project and I'll be in touch as soon as I can</p>
         </div>

@@ -4,6 +4,7 @@ import 'swiper/css';
 import { Autoplay,EffectFade } from 'swiper/modules';
 import React, { useEffect, useState } from "react";
 import { FaStar, FaStarHalfAlt, FaRegStar } from 'react-icons/fa';
+import GoogleSvg from '../../Assets/Images/icons8-google-48.png';
 
 // Add autoplay to the Swiper options
 function Reviews() {
@@ -117,6 +118,7 @@ function Reviews() {
                   <p className="reviews__date">{formatTimeDifference(review.createTime)}</p>
                   </div>
                   </div>
+                  <img src={GoogleSvg} alt="Google Icon" />
                 </div>
               </div>
             </SwiperSlide>
