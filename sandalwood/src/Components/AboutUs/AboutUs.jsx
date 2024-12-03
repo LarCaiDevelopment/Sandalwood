@@ -45,7 +45,7 @@ function AboutUs() {
               </p>
 
               <p className="about__text">
-                Visit our services page to learn more about how we can help you create the perfect kitchen, maximize your home’s storage with bespoke designs, or update your interior with stylish new doors. Let us help bring your ideas to life!
+              Take a look at our galleries below to see how we can help you create the perfect kitchen, maximize your home’s storage with bespoke designs, or update your interior with stylish new doors. Let us help bring your ideas to life!
               </p>
             </>
           ) : (
