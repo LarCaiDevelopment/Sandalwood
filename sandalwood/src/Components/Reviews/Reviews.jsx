@@ -92,7 +92,6 @@ function Reviews() {
         }}
         loop="true"
         effect="fade"
-  fadeEffect={{ crossFade: true }}
       >
         {reviews.length > 0 ? (
           reviews.map((review, index) => (

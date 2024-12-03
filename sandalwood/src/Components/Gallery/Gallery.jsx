@@ -141,7 +141,7 @@ function Gallery() {
         <span className="line__style__gallery"></span>
         <div className="gallery__pics_wrapper">
           {categories.map((category, index) => (
-            <PhotoProvider key={index} bannerVisible={true}>
+            <PhotoProvider key={index} bannerVisible={true} arrowsVisible={true}>
               <div>
             <PhotoView src={category.thumbnail}>
               <div
