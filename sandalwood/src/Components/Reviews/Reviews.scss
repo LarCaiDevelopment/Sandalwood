@@ -95,13 +95,13 @@
     flex-direction: column;
 
     &__title {
-      font-size: 48px;
+      font-size: 40px;
     }
   }
 
   @include media(tablet) {
     &__title {
-      font-size: 48px;
+      font-size: 40px;
     }
   }
 
