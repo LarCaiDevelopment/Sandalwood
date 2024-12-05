@@ -12,6 +12,7 @@
   margin-bottom: 1px;
   flex-direction: column;
   justify-content: space-around;
+  overflow-x: hidden; 
 
   &__title {
     font-size: 32px;
@@ -38,12 +39,13 @@
     padding: 10px;
     align-items: center;;
     border-radius: 5px;
+    width: 100%;
   }
 
   &__topContent {
     display: flex;
     width: 60%;
-    white-space: nowrap;
+    white-space: normal;
 
   }
 
@@ -52,6 +54,8 @@
     height: 80%;
     max-height: 115px;
     align-items: center;
+    max-width: 100%; /* Prevent fixed widths from causing overflow */
+  word-wrap: break-word;
     p{
       width: 300px;
       text-align: center;
@@ -108,7 +112,7 @@
   }
 
   .swiper-wrapper {
-    width: 350px;
+    width: 300px;
     border-radius: 12px!important;
     @include media(tablet){
       width: 400px!important;

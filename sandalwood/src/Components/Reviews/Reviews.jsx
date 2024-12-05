@@ -90,8 +90,7 @@ function Reviews() {
           delay: 7000,
           disableOnInteraction: false, 
         }}
-        loop="true"
-        effect="fade"
+        loop={true}
       >
         {reviews.length > 0 ? (
           reviews.map((review, index) => (
