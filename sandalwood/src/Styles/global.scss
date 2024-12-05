@@ -6,6 +6,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "lato";
+
   }
   
   /* HTML and Body styles */
@@ -15,6 +16,7 @@
     background-color: #f9f9f9;      // Optional background color
     color: #333;                   // Default text color
     line-height: 1.6;              // Default line height
+    
   }
   #root { /* Or the main wrapper div if not using React's root */
     display: flex;
