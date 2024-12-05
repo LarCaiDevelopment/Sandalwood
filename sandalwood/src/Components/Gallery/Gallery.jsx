@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { PhotoProvider, PhotoView } from "react-photo-view";
 import "react-photo-view/dist/react-photo-view.css";
 import "./Gallery.scss";
@@ -134,8 +134,80 @@ function Gallery() {
     },
   ];
 
+  useEffect(() => {
+    const addArrows = () => {
+      const portal = document.querySelector('.PhotoView-Portal');
+      if (portal && !portal.querySelector('.PhotoView-Slider__ArrowLeft') && !portal.querySelector('.PhotoView-Slider__ArrowRight')) {
+        const leftArrow = document.createElement('div');
+        leftArrow.classList.add('PhotoView-Slider__ArrowLeft');
+        leftArrow.innerHTML = `<svg width="44" height="44" viewBox="0 0 768 768"><path d="M640.5 352.5v63h-390l178.5 180-45 45-256.5-256.5 256.5-256.5 45 45-178.5 180h390z"></path></svg>`;
+        leftArrow.addEventListener('click', () => {
+        
+          const portal = document.querySelector('.PhotoView-Portal');
+          
+          if (portal) {
+            const carousel = portal.querySelector('.PhotoView-Slider'); 
+            
+            if (carousel && typeof carousel.prev === 'function') {
+              carousel.prev();
+            } else {
+              const event = new KeyboardEvent('keydown', {
+                bubbles: true,
+                cancelable: true,
+                key: 'ArrowLeft',
+                keyCode: 37,
+                code: 'ArrowLeft',
+                which: 37,
+              });
+              document.dispatchEvent(event);
+            }
+          }
+        });
+        
+
+        const rightArrow = document.createElement('div');
+        rightArrow.classList.add('PhotoView-Slider__ArrowRight');
+        rightArrow.innerHTML = `<svg width="44" height="44" viewBox="0 0 768 768"><path d="M384 127.5l256.5 256.5-256.5 256.5-45-45 178.5-180h-390v-63h390l-178.5-180z"></path></svg>`;
+        rightArrow.addEventListener('click', () => {
+          const carousel = portal.querySelector('.PhotoView-Slider'); 
+          if (carousel && typeof carousel.next === 'function') {
+            carousel.next();
+          }
+          else {
+            const event = new KeyboardEvent('keydown', {
+              bubbles: true,
+              cancelable: true,
+              key: 'ArrowRight',
+              keyCode: 39,
+              code: 'ArrowRight',
+              which: 39,
+            });
+            document.dispatchEvent(event);
+          }
+        });
+        portal.appendChild(leftArrow);
+        portal.appendChild(rightArrow);
+      }
+    };
+
+    addArrows();
+
+    const photoViews = document.querySelectorAll('.gallery__pics');
+    photoViews.forEach(photoView => {
+      photoView.addEventListener('click', () => {
+        setTimeout(addArrows, 200);
+      });
+    });
+
+    return () => {
+      photoViews.forEach(photoView => {
+        photoView.removeEventListener('click', addArrows);
+      });
+    };
+  }, []); 
+
   return (
-    <div id = "gallery" className="gallery">
+    <div id="gallery" className="gallery">
       <div className="gallery__wrapper">
         <h2 className="gallery__tittle">Gallery</h2>
         <span className="line__style__gallery"></span>
@@ -143,26 +215,26 @@ function Gallery() {
           {categories.map((category, index) => (
             <PhotoProvider key={index} bannerVisible={true} arrowsVisible={true}>
               <div>
-            <PhotoView src={category.thumbnail}>
-              <div
-                className="gallery__pics"
-                style={{
-                  backgroundImage: `url(${category.thumbnail})`,
-                  position: "relative",
-                }}
-              >
-                <div className="gallery__title">{category.title}</div>
-              </div>
-            </PhotoView>
+                <PhotoView src={category.thumbnail}>
+                  <div
+                    className="gallery__pics"
+                    style={{
+                      backgroundImage: `url(${category.thumbnail})`,
+                      position: "relative",
+                    }}
+                  >
+                    <div className="gallery__title">{category.title}</div>
+                  </div>
+                </PhotoView>
 
                 {category.images.map((image, idx) => (
                   <PhotoView key={`${index}-${idx}`} src={image}>
-                  <img
-                    src={image}
-                    alt={`Category ${index + 1} Image ${idx + 1}`}
-                    style={{ display: "none" }}
-                  />
-                </PhotoView>
+                    <img
+                      src={image}
+                      alt={`Category ${index + 1} Image ${idx + 1}`}
+                      style={{ display: "none" }}
+                    />
+                  </PhotoView>
                 ))}
               </div>
             </PhotoProvider>
