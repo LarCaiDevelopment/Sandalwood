@@ -16,13 +16,13 @@ function Footer() {
 
   return (
     <footer className="footer">
-      <a className="footer__logo desktop" onClick={scrollToHead}>
-        <img src={Logo} alt="LarCai Logo" />
+      <a className="footer__logo desktop">
+        <img src={Logo} alt="LarCai Logo" onClick={scrollToHead}/>
       </a>
       <div className="footer__content">
         <div className="footer__section_wrapper">
           <div className="footer__content_wrapper">
-            <img className="footer__logo mobile" src={Logo} alt="LarCai Logo" />
+            <img className="footer__logo mobile" src={Logo} alt="LarCai Logo" onClick={scrollToHead}/>
             <div className="footer__section">
               <h3 className="footer__section_title">Working hours</h3>
               <span className="line__style"></span>
