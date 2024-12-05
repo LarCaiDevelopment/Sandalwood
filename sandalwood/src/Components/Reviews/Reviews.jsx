@@ -126,7 +126,7 @@ function Reviews() {
           <p>No reviews available.</p>
         )}
       </Swiper>
-      <a className="moreReviews" href="https://www.facebook.com/SandalwoodCustomCarpentry/" aria-label="Facebook" target="_blank" rel="noopener noreferrer">More reviews</a>
+      <a className="moreReviews" href="https://www.facebook.com/SandalwoodCustomCarpentry/reviews" aria-label="Facebook" target="_blank" rel="noopener noreferrer">More reviews</a>
     </div>
   );
 }
