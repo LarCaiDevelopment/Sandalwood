@@ -26,42 +26,60 @@ function Services() {
               src={bathroom}
               alt="Bathroom"
             />
-            <p className="services__text">Bathrooms</p>
+            <div className="services__textcont">
+              <p className="services__toptext">Bathrooms</p>
+              <p className="services__bottext">Upgrade your bathroom with stylish, custom vanities and shelving.</p>
+            </div>
           </div>
           <div className="services__image">
             <img
               src={door}
               alt="Door"
             />
-            <p className="services__text">Doorways</p>
+            <div className="services__textcont">
+              <p className="services__toptext">Doors</p>
+              <p className="services__bottext">Doors can make a huge difference to a home and really upgrade the quality of a room</p>
+            </div>
           </div>
           <div className="services__image">
             <img
                src={kitchen}
               alt="Kitchen"
             />
-            <p className="services__text">Kitchens</p>
+            <div className="services__textcont">
+              <p className="services__toptext">Kitchens</p>
+              <p className="services__bottext">Transform your kitchen with custom cabinets, islands, and smart storage solutions.</p>
+            </div>
           </div>
           <div className="services__image">
             <img
                src={living}
               alt="Staircase living area"
             />
-            <p className="services__text">Living Areas</p>
+            <div className="services__textcont">
+              <p className="services__toptext">Living Areas</p>
+              <p className="services__bottext">Enhance your living space with bespoke carpentry that adds comfort and style.</p>
+            </div> 
           </div>
           <div className="services__image">
             <img
                src={fence}
               alt="Fence"
             />
-            <p className="services__text">Fencing</p>
+            <div className="services__textcont">
+               <p className="services__toptext">Fencing</p>
+               <p className="services__bottext">Durable, stylish fencing that protects and enhances your property.</p>
+            </div>
           </div>
           <div className="services__image">
             <img
                src={storage}
               alt="Storage unit"
             />
-            <p className="services__text">Storage Units</p>
+            <div className="services__textcont">
+                <p className="services__toptext">Storage Units</p>
+                <p className="services__bottext">Efficient, attractive storage solutions tailored to your needs.</p>
+            </div>
           </div>
         </div>
       </div>
