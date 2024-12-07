@@ -11,22 +11,21 @@ import Services from "./Components/Services/Services.jsx"
 
 function App() {
   return (
-    <>
-    <div id="root">
-    <Header/>
-    <div className="main-content">
-      <Hero/>
-      <AboutUs/>
-      <HowWeWork/>
-      <Services />
-      <Reviews/>
-      <Gallery />
-      <Contact/>
-    </div>
-    <Footer />
+<>
+<div id="root">
+  <Header/>
+  <div className="main-content">
+    <Hero/>
+    <AboutUs/>
+    <HowWeWork/>
+    <Services />
+    <Reviews/>
+    <Gallery />
+    <Contact/>
   </div>
-    
-    </>
+  <Footer />
+</div>
+</>
   );
 }
 
