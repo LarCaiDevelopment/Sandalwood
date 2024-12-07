@@ -1,0 +1,78 @@
+@import "../../Styles/variables";
+@import "../../Styles//media";
+
+.header {
+  z-index: 2;
+  width: 80vw;
+  margin: 0 auto;
+  position: absolute;
+  right:0;
+  left: 0;
+
+  &__left{
+    cursor: pointer;
+  }
+
+  &__content{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo{
+    height: 80px;
+    cursor: pointer;
+  }
+
+  &__button{
+    display:none;
+  }
+
+  &__num{
+    color: white;
+    font-weight: 700;
+    font-size: 22px;
+  }
+
+  @include media(desktop)  {
+
+    &__content{
+        padding: 10px 0;
+    }
+
+    &__button{
+        display:block;
+        background-color: #DFB36E;
+        color: white;
+        font-weight: 700;
+        padding: 10px;
+        width: 116px;  
+        border: none;  
+        border-radius: 18px;
+        cursor: pointer;
+        height: 36px;
+
+        &:hover{
+          text-decoration: underline;
+        }
+      }
+
+    &__right{
+        display: flex;
+        justify-content: space-around;
+        width: 40%;
+    }
+
+    
+  }
+
+
+
+}
+
+.line__style{
+    width:100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}

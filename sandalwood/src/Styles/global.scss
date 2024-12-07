@@ -1,0 +1,53 @@
+
+@import "../Styles/variables";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "lato";
+
+  }
+  
+  /* HTML and Body styles */
+  html, body {
+    height: 100%;
+    font-family: Arial, sans-serif; // Or your preferred font
+    background-color: #f9f9f9;      // Optional background color
+    color: #333;                   // Default text color
+    line-height: 1.6;              // Default line height
+    
+  }
+  #root { /* Or the main wrapper div if not using React's root */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the wrapper takes up the full viewport height */
+  }
+  .main-content {
+    flex: 1; /* Makes this content grow to fill available space */
+  }
+  
+  /* Global link styles */
+  a {
+    text-decoration: none;
+    color: inherit;
+  
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  li{
+    list-style: none;
+  }
+
+  .line__style{
+    background: $secondary-color;
+    display: block;
+    width: 70px;
+    height: 2px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+  }
+  
+
+  
