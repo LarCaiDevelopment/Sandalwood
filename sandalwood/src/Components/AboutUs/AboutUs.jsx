@@ -38,7 +38,7 @@ function AboutUs() {
               </p>
 
               <p className="about__text">
-                We handle all aspects of carpentry, including kitchen installations, custom shelving, doors, architraves, skirting boards, picture rails, window seats, flooring, loft conversions, Velux and dormer windows, staircases, and full property renovations. Additionally, we specialize in stud walls, plasterboarding, commercial second-fix carpentry, shop fittings, and outdoor projects like decking and fencing to transform your garden space.
+                We handle all aspects of carpentry, including kitchen installations, custom shelving, doors, architraves, skirting boards, picture rails, window seats, flooring, loft conversions, Velux and dormer windows, staircases, and full property renovations. Additionally, we specialise in stud walls, plasterboarding, commercial second-fix carpentry, shop fittings, and outdoor projects like decking and fencing to transform your garden space.
               </p>
 
               <p className="about__text">

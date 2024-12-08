@@ -89,8 +89,9 @@ function Gallery() {
       title: "Kitchens",
     },
     {
-      thumbnail: fence,
+      thumbnail: fence6,
       images: [
+        fence,
         fence2,
         fence3,
         fence4,
