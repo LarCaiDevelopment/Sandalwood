@@ -25,6 +25,11 @@ import kitchen5 from '../../Assets/Images/GalleryImages/kitchen5.JPG';
 import kitchen6 from '../../Assets/Images/GalleryImages/kitchen6.JPG';
 import kitchen7 from '../../Assets/Images/GalleryImages/kitchen7.JPG';
 import kitchen8 from '../../Assets/Images/GalleryImages/kitchen8.JPG';
+import kitchen10 from '../../Assets/Images/GalleryImages/kitchen10.JPG';
+import kitchen11 from '../../Assets/Images/GalleryImages/kitchen11.JPG';
+import kitchen12 from '../../Assets/Images/GalleryImages/kitchen12.JPG';
+import kitchen13 from '../../Assets/Images/GalleryImages/kitchen13.JPG';
+import kitchen14 from '../../Assets/Images/GalleryImages/kitchen14.JPG';
 import living from '../../Assets/Images/GalleryImages/living1.JPG';
 import living2 from '../../Assets/Images/GalleryImages/living2.JPG';
 import living3 from '../../Assets/Images/GalleryImages/living3.JPG';
@@ -84,7 +89,12 @@ function Gallery() {
         kitchen5,
         kitchen6,
         kitchen7,
-        kitchen8,
+        kitchen9,
+        kitchen10,
+        kitchen11,
+        kitchen12,
+        kitchen13,
+        kitchen14,
       ],
       title: "Kitchens",
     },
