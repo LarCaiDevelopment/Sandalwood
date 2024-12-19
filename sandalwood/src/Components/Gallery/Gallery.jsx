@@ -47,6 +47,11 @@ import living14 from '../../Assets/Images/GalleryImages/living14.JPG';
 import living15 from '../../Assets/Images/GalleryImages/living15.JPG';
 import living16 from '../../Assets/Images/GalleryImages/living16.JPG';
 import living17 from '../../Assets/Images/GalleryImages/living17.JPG';
+import living18 from '../../Assets/Images/GalleryImages/living18.JPG';
+import living19 from '../../Assets/Images/GalleryImages/living19.JPG';
+import living20 from '../../Assets/Images/GalleryImages/living20.JPG';
+import living21 from '../../Assets/Images/GalleryImages/living21.JPG';
+import living22 from '../../Assets/Images/GalleryImages/living22.JPG';
 import fence from '../../Assets/Images/GalleryImages/fence1.JPG';
 import fence2 from '../../Assets/Images/GalleryImages/fence2.JPG';
 import fence3 from '../../Assets/Images/GalleryImages/fence3.JPG';
@@ -136,6 +141,12 @@ function Gallery() {
         living14,
         living15,
         living16,
+        living17,
+        living18,
+        living19,
+        living20,
+        living21,
+        living22,
         door,
         door2,
         door3,
