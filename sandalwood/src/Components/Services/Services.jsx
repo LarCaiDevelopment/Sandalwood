@@ -1,86 +1,70 @@
 import "./Services.scss";
-import bathroom from '../../Assets/Images/GalleryImages/bathroom8.JPG';
-import door from '../../Assets/Images/GalleryImages/doorway3.JPG';
-import kitchen from '../../Assets/Images/GalleryImages/kitchen2.JPG';
-import living from '../../Assets/Images/GalleryImages/living5.JPG';
-import fence from '../../Assets/Images/GalleryImages/fence8.JPG';
-import storage from '../../Assets/Images/GalleryImages/storage3.JPG';
+import bathroom from "../../Assets/Images/GalleryImages/bathroom8.JPG";
+import door from "../../Assets/Images/GalleryImages/doorway3.JPG";
+import kitchen from "../../Assets/Images/GalleryImages/kitchen2.JPG";
+import living from "../../Assets/Images/GalleryImages/living5.JPG";
+import fence from "../../Assets/Images/GalleryImages/fence8.JPG";
+import storage from "../../Assets/Images/GalleryImages/storage3.JPG";
 
 function Services() {
+  const services = [
+    {
+      title: "Bathrooms",
+      description: "Custom vanities and shelving that make daily routines cleaner and easier.",
+      image: bathroom,
+      alt: "Bespoke bathroom joinery",
+    },
+    {
+      title: "Doors",
+      description: "Precision-fitted doors that elevate finish quality across your home.",
+      image: door,
+      alt: "Bespoke interior door installation",
+    },
+    {
+      title: "Kitchens",
+      description: "Built-to-fit cabinets, islands, and storage designed around your workflow.",
+      image: kitchen,
+      alt: "Custom kitchen carpentry",
+    },
+    {
+      title: "Living Areas",
+      description: "Bespoke carpentry features that improve comfort, layout, and style.",
+      image: living,
+      alt: "Carpentry for living area",
+    },
+    {
+      title: "Fencing",
+      description: "Strong, tidy fencing that protects your property and sharpens curb appeal.",
+      image: fence,
+      alt: "Timber garden fencing",
+    },
+    {
+      title: "Storage Units",
+      description: "Smart storage solutions tailored to your space and day-to-day use.",
+      image: storage,
+      alt: "Bespoke storage unit joinery",
+    },
+  ];
+
   return (
     <div className="services">
       <div className="services__wrapper">
         <div className="services__wrapper_first">
-        <h2 className="services__title">Our Services</h2>
-        <span className="line__style__services"></span>
-        <p className="services__description">
-          We specialise in bespoke joinery manufacture and installation for
-          medium to large projects. We have years of collated experience across
-          residential & commercial projects.
-        </p>
+          <h2 className="services__title">Our Services</h2>
+          <span className="line__style__services"></span>
+          <p className="services__description">We deliver bespoke joinery manufacture and installation for residential and commercial projects, with practical craftsmanship from planning through finish.</p>
         </div>
 
         <div className="services__images">
-          <div className="services__image">
-            <img
-              src={bathroom}
-              alt="Bathroom"
-            />
-            <div className="services__textcont">
-              <p className="services__toptext">Bathrooms</p>
-              <p className="services__bottext">Upgrade your bathroom with stylish, custom vanities and shelving.</p>
-            </div>
-          </div>
-          <div className="services__image">
-            <img
-              src={door}
-              alt="Door"
-            />
-            <div className="services__textcont">
-              <p className="services__toptext">Doors</p>
-              <p className="services__bottext">Doors can make a huge difference to a home and really upgrade the quality of a room</p>
-            </div>
-          </div>
-          <div className="services__image">
-            <img
-               src={kitchen}
-              alt="Kitchen"
-            />
-            <div className="services__textcont">
-              <p className="services__toptext">Kitchens</p>
-              <p className="services__bottext">Transform your kitchen with custom cabinets, islands, and smart storage solutions.</p>
-            </div>
-          </div>
-          <div className="services__image">
-            <img
-               src={living}
-              alt="Staircase living area"
-            />
-            <div className="services__textcont">
-              <p className="services__toptext">Living Areas</p>
-              <p className="services__bottext">Enhance your living space with bespoke carpentry that adds comfort and style.</p>
-            </div> 
-          </div>
-          <div className="services__image">
-            <img
-               src={fence}
-              alt="Fence"
-            />
-            <div className="services__textcont">
-               <p className="services__toptext">Fencing</p>
-               <p className="services__bottext">Durable, stylish fencing that protects and enhances your property.</p>
-            </div>
-          </div>
-          <div className="services__image">
-            <img
-               src={storage}
-              alt="Storage unit"
-            />
-            <div className="services__textcont">
-                <p className="services__toptext">Storage Units</p>
-                <p className="services__bottext">Efficient, attractive storage solutions tailored to your needs.</p>
-            </div>
-          </div>
+          {services.map((service) => (
+            <article className="services__image" key={service.title}>
+              <img src={service.image} alt={service.alt} loading="lazy" />
+              <div className="services__textcont">
+                <p className="services__toptext">{service.title}</p>
+                <p className="services__bottext">{service.description}</p>
+              </div>
+            </article>
+          ))}
         </div>
       </div>
     </div>

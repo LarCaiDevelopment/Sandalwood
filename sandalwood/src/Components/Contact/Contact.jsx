@@ -1,22 +1,18 @@
 import "./Contact.scss";
-import ContactImage from "../../Assets/Images/GalleryImages/storage4.JPG";
 import { IoIosSend } from "react-icons/io";
-import { FaLocationDot } from "react-icons/fa6";
 import { IoMdCall } from "react-icons/io";
 import { MdOutlineMail } from "react-icons/md";
 import { CgProfile } from "react-icons/cg";
 import { GoPencil } from "react-icons/go";
 
-
 function Contact() {
   return (
     <div className="contact">
       <div className="contact__image_wrapper">
-        {/* //<img className="contact__image" src={ContactImage} alt="ContactImage" /> */}
         <div className="contact__wrapper">
           <h2 className="contact__right_title">
-           Contact Us
-           <span className="line__style" role="presentation" aria-hidden="true"></span>
+            Contact Us
+            <span className="line__style" role="presentation" aria-hidden="true"></span>
           </h2>
           <p className="contact__right_text">Tell us a bit about your desired project and we'll be in touch as soon as we can.</p>
         </div>
@@ -27,7 +23,7 @@ function Contact() {
             <div className="contact__form_row">
               <div className="contact__form_group">
                 <label htmlFor="first-name">
-                 <CgProfile /> Name<span className="contact__required"></span>
+                  <CgProfile /> Name<span className="contact__required"></span>
                 </label>
                 <input type="text" id="first-name" name="firstName" required />
               </div>
@@ -41,13 +37,13 @@ function Contact() {
             <div className="contact__form_row">
               <div className="contact__form_group">
                 <label htmlFor="email">
-                <MdOutlineMail /> Email<span className="contact__required"></span>
+                  <MdOutlineMail /> Email<span className="contact__required"></span>
                 </label>
                 <input type="email" id="email" name="email" required />
               </div>
               <div className="contact__form_group">
                 <label htmlFor="phone">
-                <IoMdCall /> Phone<span className="contact__required"></span>
+                  <IoMdCall /> Phone<span className="contact__required"></span>
                 </label>
                 <input
                   type="tel"

@@ -1,18 +1,17 @@
 import "./Reviews.scss";
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import { Autoplay,EffectFade } from 'swiper/modules';
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import { Autoplay, EffectFade } from "swiper/modules";
 import React, { useEffect, useState } from "react";
-import { FaStar, FaStarHalfAlt, FaRegStar } from 'react-icons/fa';
-import GoogleSvg from '../../Assets/Images/icons8-google-48.png';
+import { FaStar, FaStarHalfAlt, FaRegStar } from "react-icons/fa";
+import GoogleSvg from "../../Assets/Images/icons8-google-48.png";
 
 // Add autoplay to the Swiper options
 function Reviews() {
   const [reviews, setReviews] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-  const apiUrl =
-    "https://featurable.com/api/v1/widgets/ce0eb508-3701-421c-97d2-ce017a7543fd";
+  const apiUrl = "https://featurable.com/api/v1/widgets/ce0eb508-3701-421c-97d2-ce017a7543fd";
 
   useEffect(() => {
     const fetchReviews = async () => {
@@ -63,14 +62,14 @@ function Reviews() {
     const now = new Date();
     const reviewDate = new Date(date);
     const diffInMilliseconds = now - reviewDate;
-  
+
     const diffInSeconds = Math.floor(diffInMilliseconds / 1000);
     const diffInMinutes = Math.floor(diffInSeconds / 60);
     const diffInHours = Math.floor(diffInMinutes / 60);
     const diffInDays = Math.floor(diffInHours / 24);
     const diffInMonths = Math.floor(diffInDays / 30); // Approximate
     const diffInYears = Math.floor(diffInDays / 365); // Approximate
-  
+
     if (diffInYears > 0) return `${diffInYears} ${diffInYears > 1 ? "years" : "year"} ago`;
     if (diffInMonths > 0) return `${diffInMonths} ${diffInMonths > 1 ? "months" : "month"} ago`;
     if (diffInDays > 0) return `${diffInDays} ${diffInDays > 1 ? "days" : "day"} ago`;
@@ -83,12 +82,13 @@ function Reviews() {
     <div className="reviews">
       <p className="reviews__title">What our Customers have to say about us</p>
       <Swiper
-        modules={[Autoplay,EffectFade]}
+        modules={[Autoplay, EffectFade]}
         spaceBetween={50}
         slidesPerView={1}
+        autoHeight={true}
         autoplay={{
           delay: 7000,
-          disableOnInteraction: false, 
+          disableOnInteraction: false,
         }}
         loop={true}
       >
@@ -97,24 +97,18 @@ function Reviews() {
             <SwiperSlide key={review.reviewId || index}>
               <div className="reviews__container_Wrapper">
                 <div className="reviews__topContent">
-                <div className="review__stars">
-                    {renderStars(review.starRating)}
-                  </div>
+                  <div className="review__stars">{renderStars(review.starRating)}</div>
                 </div>
                 <div className="reviews__midContent">
                   <p>{review.comment || ""}</p>
                 </div>
                 <div className="reviews__botContent">
                   <div>
-                    <img
-                      src={review.reviewer.profilePhotoUrl}
-                      alt={`${review.reviewer.displayName}'s profile`}
-                      className="reviews__profile-photo"
-                    />
-                                      <div className="reviews__reviewsAndName">
-                  <p className="reviews__name">{review.reviewer.displayName}</p>
-                  <p className="reviews__date">{formatTimeDifference(review.createTime)}</p>
-                  </div>
+                    <img src={review.reviewer.profilePhotoUrl} alt={`${review.reviewer.displayName}'s profile`} className="reviews__profile-photo" />
+                    <div className="reviews__reviewsAndName">
+                      <p className="reviews__name">{review.reviewer.displayName}</p>
+                      <p className="reviews__date">{formatTimeDifference(review.createTime)}</p>
+                    </div>
                   </div>
                   <img src={GoogleSvg} alt="Google Icon" />
                 </div>
@@ -125,7 +119,9 @@ function Reviews() {
           <p>No reviews available.</p>
         )}
       </Swiper>
-      <a className="moreReviews" href="https://www.facebook.com/SandalwoodCustomCarpentry/reviews " aria-label="Facebook" target="_blank" rel="noopener noreferrer">More reviews</a>
+      <a className="moreReviews" href="https://www.facebook.com/SandalwoodCustomCarpentry/reviews " aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+        More reviews
+      </a>
     </div>
   );
 }
